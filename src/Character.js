@@ -1,8 +1,8 @@
 export class Character {
-  constructor() {
-    this.health = null;
-    this.strength = null;
-    this.intelligence = null;
-    this.dexterity = null;
+  constructor(health, strength, intelligence, dexterity) {
+    this.health = health;
+    this.strength = strength;
+    this.intelligence = intelligence;
+    this.dexterity = dexterity;
   }
 }
