@@ -6,6 +6,9 @@ export class Warrior extends Character {
     this.class = "warrior";
   }
   powerSmash() {
-    return this.strength
+    return this.strength * 1.5;
+  }
+  doubleStrike() {
+    return (this.strength * .75) * 2;
   }
 }
