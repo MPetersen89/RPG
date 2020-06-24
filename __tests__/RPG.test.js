@@ -24,7 +24,7 @@ describe('Character', () => {
     expect(warrior.class).toBe("warrior");
     expect(warrior.health).toBe(20);
     expect(warrior.strength).toBe(20);
-    expect(warrior.intelligence).toBe(20);
+    expect(warrior.intelligence).toBe(5);
     expect(warrior.dexterity).toBe(10);
   })
 });
