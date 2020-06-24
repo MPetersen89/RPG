@@ -35,16 +35,18 @@ _No known bugs_
 
 | Behavior    | Input | Output |
 | :---------- | ----- | -----: |
-| Program will ensure each row contains all numbers from 1 to 9 with no repeats | "1, 2, 3, 4, 5, 6, 7, 8, 9" | true |
-| Program will ensure each column contains all numbers from 1 to 9 with no repeats | "1, 2, 3, 4, 5, 6, 7, 8, 9" | true |
-| Program will ensure each of the nine 3x3 grids contain all numbers from 1 to 9 with no repeats | "finished sudoku puzzle" | true
-
+| Program can create a character object for the player | User clicks New Game | Character Object Created |
+| Character object holds health, strength, intelligence, and dexterity stats | None necessary | Character = {health = null; strength = null; intelligence = null; dexterity = null;} |
+| Program lets user select a class | None necessary | User can input "Warrior", "Wizard", "Thief" |
+| Program defines the class select | User selects "Warrior" | Character  =  {class = "Warrior"; health = null; strength = null; intelligence = null; dexterity = null;}|
+| Program assigns stats based on the class selected | None necessary | Character  =  {class = "Warrior"; health = 20; strength = 20; intelligence = 5; dexterity = 10;} |
+| Program assigns abilities based on the class selected | None necessary | Character  =  {class = "Warrior"; health = 20; strength = 20; intelligence = 5; dexterity = 10; powerSmash(); doubleStrike()} |
 
 
 ## Support and contact details
 
 * Michael Petersen <michael_petersen_email@yahoo.com>
-* Micheal Hansen <michael.hansen@gmail.com>
+* Micheal Hansen <micheal.hansen@gmail.com>
 
 ## Technologies Used
 
