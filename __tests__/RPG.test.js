@@ -3,9 +3,11 @@ import { Warrior } from './../src/warrior.js';
 
 describe('Character', () => {
   let character;
+  let warrior;
 
   beforeEach(() => {
     character = new Character(null, null, null, null);
+    warrior = new Warrior();
   });
 
   test('should create a character object for the player', () => {
@@ -20,11 +22,15 @@ describe('Character', () => {
   });
 
   test('should update character object based on selected class', () => {
-    let warrior = new Warrior();
     expect(warrior.class).toBe("warrior");
     expect(warrior.health).toBe(20);
     expect(warrior.strength).toBe(20);
     expect(warrior.intelligence).toBe(5);
     expect(warrior.dexterity).toBe(10);
+  });
+
+  test('should update character with predefined abilities', () => {
+    expect(warrior.powerSmash()).toBeTruthy();
+    expect(warrior.doubleStrike()).toBeTruthy();
   })
 });
